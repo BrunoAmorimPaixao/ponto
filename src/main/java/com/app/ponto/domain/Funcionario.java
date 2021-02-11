@@ -46,6 +46,8 @@ public class Funcionario implements Serializable {
     private String cpf;
 
     @ManyToOne(fetch = FetchType.EAGER)
+    @Getter
+    @Setter
     private Empresa empresa;
 
     public Funcionario() {
